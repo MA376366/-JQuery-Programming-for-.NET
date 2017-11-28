@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="scripts/jquery-3.2.1.intellisense.js"></script>
+    <script>
+$(document).ready(function(){
+
+    $('#select_all').click(function () {
+        $('#country_list option').prop('selected', true);
+    });
+
+});
+    </script>
+   
+</head>
+<body>
+    <select id="country_list" MULTIPLE size="7">
+        <option value="India">India</option>
+         <option value="UK">UK</option>
+        <option value="US">US</option>
+        <option value="Canada">Canada</option>
+        <option value="France">France</option>
+        <option value="China">China</option>
+    </select>
+    <br />
+    <input type="button" id="select_all" value="Select All">
+</body>
+</html>

@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="scripts/jquery-3.2.1.intellisense.js"></script>
+    <script>
+$(document).ready(function(){
+   
+    if ($('input:radio').is(':checked') === false)
+    {
+        $('input').attr('checked', true);
+    }
+
+});
+    </script>
+</head>
+<body>
+    <form>
+        <input  type="radio">AngularJS <br />
+        <input  type="radio">Bootstrap <br />
+        <input  type="radio">MVC <br />
+        <input  type="radio">JAVASCRIPT <br />
+        <input  type="radio">.NET <br />
+        <input  type="radio">OTHER <br />
+      
+    </form>
+</body>
+</html>

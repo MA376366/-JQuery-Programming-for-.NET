@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>JQUERY ALL ELEMENTS</title>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="scripts/jquery-3.2.1.intellisense.js"></script>
+    <script>
+$(document).ready(function(){
+
+    $("code").css("background", "red");
+    $("code").css("color", "white");
+    $("strong").css("fontSize", 30);
+});
+    </script>
+</head>
+<body>
+    <strong>Example 1: Hello World Program</strong><br />
+   <code>
+      
+           using namespace std;<br />
+
+           int main()<br />
+           {<br />
+           cout << "Hello, World!";<br />
+           return 0;<br />
+           }<br />
+</code><br />
+    <strong>Example: Calculate Standard Deviation</strong><br />
+    <code>
+      
+                using namespace std;<br />
+
+                float calculateSD(float data[]);<br />
+
+                int main()<br />
+                {<br />
+                int i;<br />
+                float data[10];<br />
+
+                cout << "Enter 10 elements: ";<br />
+                for(i = 0; i < 10; ++i)<br />
+                cin >> data[i];<br />
+
+                cout << endl << "Standard Deviation = " << calculateSD(data);<br />
+
+                return 0;<br />
+                }<br />
+
+                float calculateSD(float data[])<br />
+                {<br />
+                float sum = 0.0, mean, standardDeviation = 0.0;<br />
+
+                int i;<br />
+
+                for(i = 0; i < 10; ++i)<br />
+                {<br />
+                sum += data[i];<br />
+                }v
+
+                mean = sum/10;<br />
+
+                for(i = 0; i < 10; ++i)<br />
+                standardDeviation += pow(data[i] - mean, 2);<br />
+
+                return sqrt(standardDeviation / 10);<br />
+                }<br />
+    </code>
+</body>
+</html>

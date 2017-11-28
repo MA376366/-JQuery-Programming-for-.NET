@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="scripts/jquery-3.2.1.intellisense.js"></script>
+    <script>
+        $(document).ready(function ()
+        {
+           
+            $("#hideAll").click(function () {
+                $("p").hide();
+            });
+            $("#hideClass").click(function () {
+                $(".target").hide();
+            });
+            $("#hideID").click(function () {
+                $("#target").hide();
+            });
+            $("#ClickMe").click(function () {
+                $("#ClickMe").hide();
+            });
+            $("#showAll").click(function () {
+                $("p").show();
+            });
+            $("#Hide").click(function () {
+                $("#SecondRound").hide();
+            });
+
+            $("#Show").click(function () {
+                $("#SecondRound").show();
+            });
+
+            $("#Finish").click(function () {
+                $("#LastTarget").toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>Normal Paragraph 1</p>
+    <p>Normal Paragraph 2</p>
+   
+    <p class="target">Paragraph with class </p>
+    <p class="target">Paragraph with class</p>
+   
+    <p id="target">Paragraph with ID</p>
+   
+    <button id="hideAll">Hide_All_P</button>
+    <button id="hideClass">Hide_class_P</button>
+    <button id="hideID">Hide_ID_P</button>
+    <button id="showAll">Show_All</button>
+    <hr />
+    <p id="SecondRound">
+        Hide and Show Demo
+    </p>
+    <button id="Hide">Hide</button>
+    <button id="Show">Show</button><hr />
+    <p id="LastTarget">
+        The optional speed parameter specifies the speed of the hiding/showing, and can take the following values: "slow", "fast", or milliseconds.
+
+        The optional callback parameter is a function to be executed after the hide() or show() method completes (you will learn more about callback functions in a later chapter).
+
+        The following example demonstrates the speed parameter with hide():
+    </p>
+    <button id="Finish">Click for Toggle</button>
+</body>
+</html>

@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="scripts/jquery-3.2.1.intellisense.js"></script>
+    <script>
+        $(document).ready(function ()
+        {
+            $("#click").click(function ()
+            {
+                alert("Click Fucntion Demo");
+            });
+            $("#doubleClick").dblclick(function ()
+            {
+                alert("Double Click Fucntion Demo");
+            });
+            $("#mouseEnter").mouseenter(function ()
+            {
+                $("#mouseEnter").css("background-color", "red");
+            });
+            $("#mouseLeave").mouseenter(function () {
+                $("#mouseLeave").css("background-color", "orange");
+            });
+            $("#mouseLeave").mouseleave(function ()
+            {
+                $("#mouseLeave").css("background-color", "lightgray");
+            });
+
+            $("#Hover").hover(function ()
+            {
+                $(this).css("background-color", "yellow");
+            }, function () {
+                $(this).css("background-color", "pink");
+            });
+            $("input").focus(function () {
+                $(this).css("background-color", "#cccccc");
+            });
+            $("input").blur(function () {
+                $(this).css("background-color", "#ffffff");
+            });
+        });
+    </script>
+</head>
+<body>
+    <p id="click">Click Me Once!!!</p>
+
+    <p id="doubleClick">Click Me Twice!!!</p>
+
+    <p id="mouseEnter">Bring your mouse point Here!!!</p>
+
+    <p id="mouseLeave">Bring your mouse point Here then move away!!!</p>
+
+    <p id="Hover">Hover the mouse pointer over this paragraph.</p>
+
+    Name: <input type="text" name="Name"><br><br>
+    Email: <input type="text" name="Email"><br/><br>
+    Phone: <input type="text" name="Phone"><br /><br>
+</body>
+</html>

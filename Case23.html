@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Accordion Demo</title>
+	<meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="scripts/jquery-3.2.1.intellisense.js"></script>
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+          rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <style>
+        #accordion{
+            font-size: 18px;
+        }
+        .ui-widget-header, ui-button {
+            background:#b9cd6d;
+            border: 1px solid #b9cd6d;
+            color: #FFFFFF;
+            font-weight: bold;
+         }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#accordion").accordion();
+            var ProgrammingLanguages = ["Asp","C","C++","COBOL","Fortran","Java","JavaScript","Perl","PHP","Python","Ruby"];
+            $("#Skills").autocomplete({
+                source: ProgrammingLanguages
+            });
+
+            $("#button1").button();
+
+            $("#dialog").dialog({
+                autoOpen: false,
+            });
+            $("#open").click(function () {
+                $("#dialog").dialog("open");
+            });
+            $("#slider").slider();
+
+            $("#tabs-1").tabs();
+
+            $("#datepicker").datepicker();
+            
+            $("#progressbar").progressbar({
+                value: 75
+              
+            });
+        });
+    </script>
+</head>
+<body>
+    Sample Progressbar with 75%<br />
+     <div id="progressbar"></div> <br />
+    Enter your skills
+    <div class="Target">
+        <input id="Skills"><input id="button1" type="submit" value="submit">
+    </div><br />
+    <p>Enter Date: <input type="text" id="datepicker"></p><br />
+    <div id="dialog"
+         title="Greetings...">
+        Demo Worked!!!<br />
+        Demo Worked!!!!<br />
+        Demo Worked!!!!<br />
+        Demo Worked!!!
+    </div>
+    <div id="slider"></div><br />
+    <button id="open">Open DialogBox</button><br /><br />
+    <div id="accordion">
+        <h3>Section 1</h3>
+        <div>
+            <p>
+                A jumbotron indicates a big box for calling extra attention to some special content or information.
+
+                A jumbotron is displayed as a grey box with rounded corners. It also enlarges the font sizes of the text inside it.
+
+                Tip: Inside a jumbotron you can put nearly any valid HTML, including other Bootstrap elements/classes.
+            </p>
+            <p>
+                A jumbotron indicates a big box for calling extra attention to some special content or information.
+
+                A jumbotron is displayed as a grey box with rounded corners. It also enlarges the font sizes of the text inside it.
+
+                Tip: Inside a jumbotron you can put nearly any valid HTML, including other Bootstrap elements/classes.
+            </p>
+        </div>
+        <h3>Section 2</h3>
+        <div>
+            <p>
+                A jumbotron indicates a big box for calling extra attention to some special content or information.
+
+                A jumbotron is displayed as a grey box with rounded corners. It also enlarges the font sizes of the text inside it.
+
+                Tip: Inside a jumbotron you can put nearly any valid HTML, including other Bootstrap elements/classes.
+            </p>
+            <p>
+                A jumbotron indicates a big box for calling extra attention to some special content or information.
+
+                A jumbotron is displayed as a grey box with rounded corners. It also enlarges the font sizes of the text inside it.
+
+                Tip: Inside a jumbotron you can put nearly any valid HTML, including other Bootstrap elements/classes.
+            </p>
+        </div>
+        <h3>Section 3</h3>
+        <div>
+            <p>
+                A jumbotron indicates a big box for calling extra attention to some special content or information.
+
+                A jumbotron is displayed as a grey box with rounded corners. It also enlarges the font sizes of the text inside it.
+
+                Tip: Inside a jumbotron you can put nearly any valid HTML, including other Bootstrap elements/classes.
+            </p>
+            <p>
+                A jumbotron indicates a big box for calling extra attention to some special content or information.
+
+                A jumbotron is displayed as a grey box with rounded corners. It also enlarges the font sizes of the text inside it.
+
+                Tip: Inside a jumbotron you can put nearly any valid HTML, including other Bootstrap elements/classes.
+            </p>
+        </div>
+        <h3>Section 4</h3>
+        <div>
+            <p>
+                A jumbotron indicates a big box for calling extra attention to some special content or information.
+
+                A jumbotron is displayed as a grey box with rounded corners. It also enlarges the font sizes of the text inside it.
+
+                Tip: Inside a jumbotron you can put nearly any valid HTML, including other Bootstrap elements/classes.
+            </p>
+            <p>
+                A jumbotron indicates a big box for calling extra attention to some special content or information.
+
+                A jumbotron is displayed as a grey box with rounded corners. It also enlarges the font sizes of the text inside it.
+
+                Tip: Inside a jumbotron you can put nearly any valid HTML, including other Bootstrap elements/classes.
+            </p>
+        </div>
+    </div><br />
+    <div id="tabs-1">
+        <ul>
+            <li><a href="#tabs-2">Tab 1</a></li>
+            <li><a href="#tabs-3">Tab 2</a></li>
+            <li><a href="#tabs-4">Tab 3</a></li>
+        </ul>
+        <div id="tabs-2">
+            <p>
+                A jumbotron indicates a big box for calling extra attention to some special content or information.
+            </p>
+        </div>
+        <div id="tabs-3">
+            <p>
+                Tip: Inside a jumbotron you can put nearly any valid HTML, including other Bootstrap elements/classes.
+            </p>
+        </div>
+        <div id="tabs-4">
+            <p>
+                A jumbotron indicates a big box for calling extra attention to some special content or information.
+            </p>
+            <p>
+                Tip: Inside a jumbotron you can put nearly any valid HTML, including other Bootstrap elements/classes.
+            </p>
+        </div>
+    </div><br />
+   
+</body>
+</html>
